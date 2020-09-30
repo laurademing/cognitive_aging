@@ -13,22 +13,25 @@
   - Google Brain: http://g.co/brain
 </script>
 
+<script src="https://d3js.org/d3.v4.js"></script>
 
+<script>
+var svg = d3.select("#dataviz_area")
+svg.append("circle")
+  .attr("cx", 2).attr("cy", 2).attr("r", 40).style("fill", "blue");
+svg.append("circle")
+  .attr("cx", 140).attr("cy", 70).attr("r", 40).style("fill", "red");
+svg.append("circle")
+  .attr("cx", 300).attr("cy", 100).attr("r", 40).style("fill", "green");
+</script>
 
 <dt-article>
-  <h1>Hello World 3</h1>
+  <h1>Hello World 4</h1>
   <h2>A description of the article</h2>
   <dt-byline></dt-byline>
   <p>This is the first paragraph of the article.</p>
   <p>We can also cite <dt-cite key="gregor2015draw"></dt-cite> external publications.</p>
   
-  <script src="https://d3js.org/d3.v4.js"></script>
-
-<script>
-d3
-  .select(".target")  // select the elements that have the class 'target'
-  .style("stroke-width", 8) // change their style: stroke width is not equal to 8 pixels
-</script>
 </dt-article>
 
 <dt-appendix>
