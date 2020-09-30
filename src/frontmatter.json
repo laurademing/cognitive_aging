@@ -4,11 +4,18 @@
 	"password": "svgs",
 	"authors": [
 		{
-			"author": "Ludwig Schubert",
-			"authorURL": "https://schubert.io/",
-			"affiliation": "OpenAI",
-			"affiliationURL": "https://openai.com"
-		}
+			"author": "Joanne Peng",
+			"authorURL": "https://twitter.com/joannezpeng",
+			"affiliation": "Aging",
+			"affiliationURL": "https://en.wikipedia.org/wiki/Ageing"
+		},
+	    {
+		         "author": "Laura Deming",
+                        "authorURL": "https://twitter.com/laurademing",
+                        "affiliation": "Aging",
+                        "affiliationURL": "https://en.wikipedia.org/wiki/Ageing"
+}
+
 	],
 	"katex": {
 		"delimiters": [
