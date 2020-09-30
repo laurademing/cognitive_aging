@@ -22,7 +22,7 @@ d3
 </script>
 
 <dt-article>
-  <h1>Hello World</h1>
+  <h1>Hello World 2</h1>
   <h2>A description of the article</h2>
   <dt-byline></dt-byline>
   <p>This is the first paragraph of the article.</p>
