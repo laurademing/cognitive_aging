@@ -13,6 +13,14 @@
   - Google Brain: http://g.co/brain
 </script>
 
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<script>
+d3
+  .select(".target")  // select the elements that have the class 'target'
+  .style("stroke-width", 8) // change their style: stroke width is not equal to 8 pixels
+</script>
+
 <dt-article>
   <h1>Hello World</h1>
   <h2>A description of the article</h2>
