@@ -1,4 +1,8 @@
+
+
 <!DOCTYPE html>
+
+<h1>First html document</h1>
 
 <!-- Add a svg area, empty -->
 <svg id="dataviz_area" height=200 width=450></svg>
