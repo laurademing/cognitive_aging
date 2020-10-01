@@ -21,6 +21,37 @@ svg.append("circle")
 </script>
 
 <script>
+  chart = {
+  const svg = d3.create("svg")
+      .attr("viewBox", [0, 0, width, height])
+      .style("overflow", "visible");
+
+
+  svg.append("g")
+      .call(xAxis);
+
+  svg.append("g")
+      .call(yAxis);
+
+  const path = svg.append("g")
+      .attr("fill", "none")
+      .attr("stroke", "steelblue")
+      .attr("stroke-width", 1.5)
+      .attr("stroke-linejoin", "round")
+      .attr("stroke-linecap", "round")
+    .selectAll("path")
+    .data(data.series)
+    .join("path")
+      .style("mix-blend-mode", "multiply")
+      .attr("d", d => line(d.values));
+
+  svg.call(hover, path);
+
+  return svg.node();
+}
+</script>
+
+<script>
 export default function define(runtime, observer) {
   const main = runtime.module();
   const fileAttachments = new Map([["Seattle Longitudinal Study - Table 5.8 Processed-2@1.csv",new URL("./files/b44ce760208cef67a2589a25198448ad923ff0b5aa5f7c93f24ec02b4d0eacd071386c764215d6cb785181bb6e00781cf2a5eb7fe1d4a082e7d223609bfb2ff2",import.meta.url)]]);
