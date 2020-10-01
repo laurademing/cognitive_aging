@@ -44,6 +44,7 @@ const inspect = Inspector.into("#observablehq-5cb18737");
 (new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
 </script>
 </figure>
+
     <h4>Hearing</h4>
 
     <p>As you age, structures inside the ear start to change and their functions decline. Your ability to pick up sounds decreases. You may also have problems maintaining your balance as you sit, stand, and walk.</p>
