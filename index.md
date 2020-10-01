@@ -1,5 +1,3 @@
-<!doctype html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +16,7 @@
   </d-front-matter>
 
   <d-title>
-    <h1>How we age</h1>
+    <h1>How we age - updated</h1>
     <p>A quantitative description of our functional decline</p>
   </d-title>
 
@@ -38,7 +36,13 @@ Aging is a complex phenomenon. How should we approach it?
 </p>
 
     <figure>
-      <%= require("static/diagrams/Cn6Iw4Q101.svg") %>
+<div id="observablehq-beb78e3f"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@laurademing/cognition-with-age.js?v=3";
+const inspect = Inspector.into("#observablehq-beb78e3f");
+(new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
+</script>
     </figure>
 
     <h4>Hearing</h4>
