@@ -36,15 +36,13 @@ Aging is a complex phenomenon. How should we approach it?
 </p>
 
 <figure class="l-screen">                                                       
-<div id="observablehq-5cb18737"></div>                                          
-<script type="module">                                                          
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/ru\
-ntime@4/dist/runtime.js";                                                       
-import define from "https://api.observablehq.com/@laurademing/cognition-with-ag\
-e.js?v=3";                                                                      
-const inspect = Inspector.into("#observablehq-5cb18737");                       
+<div id="observablehq-75c9d048"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@laurademing/cognition-with-age.js?v=3";
+const inspect = Inspector.into("#observablehq-75c9d048");
 (new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
-</script>                                                                       
+</script>                                                                     
 </figure>  
 
     <h4>Hearing</h4>
