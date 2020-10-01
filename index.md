@@ -1,3 +1,5 @@
+<!doctype html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,51 +18,72 @@
   </d-front-matter>
 
   <d-title>
-    <h1>How we age - updated</h1>
+    <h1>An unsolved problem in cognitive aging</h1>
     <p>A quantitative description of our functional decline</p>
   </d-title>
 
   <d-article>
 
     <p>
-Aging is a complex phenomenon. How should we approach it?
+      <b>TL;DR</b> the longitudinal and cross-sectional components of cohort-based cognitive aging studies generally disagree.
+      Hypotheses propounded include the retest effect, attrition effect, and Flynn effect.
+
     </p>
 
     <h4>Introduction</h4>
-    <p>How and why do you age? We will take you through some of the major functions, and how they change with time. Additionally, we will cover the difference between cohort-based and longitudinal aging.</p>
+    <p>While we get worse at certain cognitive tasks over time, we get better at others. Abilities that require crystallized intelligence — such as vocabulary and general information — typically stay stable or accumulate over time. Abilities that require fluid intelligence — such as reasoning, forming new associations, and solving novel problems — typically degrade over time.</p>
 
-    <h4>Cognition</h4>
-    <p> We get worse on most cognitive tasks as we age.There are two major types of cognitive tasks - fluid intelligence and crystallized intelligence. Fluid intelligence is like processing speed - taking in and manipulating new information. Crystallized intelligence is like a concept graph or stored information - what you already know. Fluid intelligence appears to peak in your 20s and decline monotonically thereafter. Crystallized intelligence appears stable or increasing into your 60s, at which point it declines. </p>
-    <p>Cohort and longitudinal studies show different results in cognitive aging. Cohort studies show monotonic decreases on most markers of cognitive function for fluid intelligence with age. Longitudinal studies, surprisingly, show increase longitudinal in cognitive function, particularly in the young. You see less of this over age 60. This could be explained by artifact (people dropping out to bias the results for those who stay), or possibly (though this is a guess) the Flynn effect (those born later might just be smarter than those of a similar age born earlier).</p>
-<p> A heuristic for sample sizes is 300-5,000 individuals to detect a cognitive difference over 5 years with p<0.05 with .8 probability. You might expect your score to drop by a few points (on most of the major scales) every 5 years, after age 50.
-</p>
+    <h4>Cognitive Aging Studies</h4>
+    <p>You could take a measurement multiple times over many years. For example, a researcher could administer a cognitive test to a group of people aged 18-80 twice over a five years.</p>
+    
+    <p><b>PROS:</b> Researchers can establish a series of events and draw possible cause-effect conclusions from the study, which provides unique insights that sometimes cannot be obtained otherwise.</p>
+    
+    <p><b>CONS:</b> Can take a long time and cost a lot of $$$.  <d-footnote id="d-footnote-1">The Framingham Heart Study is a good example of this</d-footnote></p>
+    <p>A hack to this is to take one measurement of young, middle-aged, and old people and compare. For example, a researcher could administer a cognitive test or set of cognitive tests to a group of people aged 18-80 once. However, any past or future cognitive tests administered would not be considered.</p>
+    <p><b>PROS:</b> Many variables can be tested at once, with fairly quick results.</p>
+    <p><b>CONS:</b> Not so accurate –– "snapshot" of individual's cognitive performance highly influenced by external factors.</p>
+   <p>People call the first one "longitudinal" and the second one "cross-sectional".</p>
+<p>You could also do a hybrid of these two and this is called "cohort-based", which takes cross-sectional measurements over time selecting for a cohort or cohorts based on a specific event such as birth, geographic location, or historical experience. 
+ </p>
 
-<figure class="l-screen">                                                       
-<div id="observablehq-75c9d048"></div>
+    <h4>A curious observation</h4>
+
+    <p>
+      Curiously, cross-sectional and longitudinal studies do not agree when grouped in cohorts by age! The graph below is taken from a study testing "episodic memory factor score", a proxy for verbal memory, over a period of five years grouped into cohorts by age.
+      </p>
+<figure class="l-screen">
+<div id="observablehq-5cb18737"></div>
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
 import define from "https://api.observablehq.com/@laurademing/cognition-with-age.js?v=3";
-const inspect = Inspector.into("#observablehq-75c9d048");
+const inspect = Inspector.into("#observablehq-5cb18737");
 (new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
-</script>                                                                     
-</figure>  
+</script>
+</figure>
 
-    <h4>Hearing</h4>
+    <p>
+      How to read the graph: In the above graph, each line represents a longitudinal measurement over a period of five years. Each different line represents a different cohort organized by age. <d-footnote id="d-footnote-2">Figure 2.2, Major Issues in Cognitive Aging by Timothy Salthouse: Means and standard errors of performance on different cognitive tests at different measurement occasions for adults of different ages. The connected lines represent longitudinal data from the same individuals, and different sets of lines correspond to different individuals.</d-footnote></p>
 
-    <p>As you age, structures inside the ear start to change and their functions decline. Your ability to pick up sounds decreases. You may also have problems maintaining your balance as you sit, stand, and walk.</p>
-    <figure>                                                        
-      <%= require("static/diagrams/crGIeDie01.svg") %>           
-    </figure>   
-    <h4>Movement</h4>
-    <p>Physically inactive people lose 3-5% of muscle mass each decade after age 30.</p>                                                     
-    <figure>                                                  
-                                                                    
-      <%= require("static/diagrams/4zUSlLFe01.svg") %>                                                                           
-    </figure>
+    </p>
+
+    <p>
+      For individuals younger than 60 years old, individual cohort performance increases over time when measured longitudinally. But when comparing performance between cohorts cross-sectionally, there is a consistent monotonic decline. So, these two measurements do not agree! Why this occurs is still an unsolved problem in cognitive aging.
+    </p>
+
+<p>There are current hypotheses that try to explain this contradiction:</p>
+
+<p><b>Retest Effect:</b> taking the test multiple times makes you better at it, even over a period of 5+ years between taking the first cognitive test and the last cognitive test.</p>
+
+<p>Possible solutions: find a better proxy for cognition that does not require administering a test, but continuously tracks function over a period of time. For example, correlating the speed and time in between taps and swipes on an iPhone to a one-time administered cognitive test that doesn't require an additional test.</p>
+
+<p><b> Attrition Effect:</b> the kind of people who are likely to keep doing the longitudinal study are the kind of people for whom performance would be likely to get better, i.e. the people who drop out are the ones who would test poorly over time, skewing the test results to an increase in cognitive ability over time.</p>
+
+   <p><b>Flynn Effect:</b> the cohort based studies show cognitive aging because (as noted elsewhere) measure of IQ are actually increasing for people of the same age born in later years. So, this doesn't have to do with aging at all, it's just showing that people born later (who would be different ages in the sane year) are getting smarter. 
+</p>
     
     <h4>Conclusion</h4>
     <p>
-Aging is a complex and multifactorial proces.
+Aging is a complex and multifactorial process.
     </p>
 
 
@@ -71,20 +94,20 @@ Aging is a complex and multifactorial proces.
   <d-appendix>
     <h3>Acknowledgments</h3>
     <p>
-      We are deeply grateful to...
+      We are deeply grateful to Timothy Salthouse for his excellent writing on this subject, and Sebastien Zany for extensive reviews and editorial commentary.
     </p>
 
     <p>
-      Many of our diagrams are based on...
+      Many of our diagrams are based on Timothy Salthouse's Figure 2.2 in Major Issues in Cognitive Aging.
     </p>
 
     <h3>Author Contributions</h3>
     <p>
-      <b>Research:</b> Joanne developed ...
+      <b>Research:</b> LD and JP jointly conceived of and researched this project.
     </p>
 
     <p>
-      <b>Writing & Diagrams:</b> The text was initially drafted by...
+      <b>Writing & Diagrams:</b> The text was initially drafted by JP. LD made the diagram, but based off of Timothy Salthouse's book (it turns out he was wrong about the error bars, thought).
     </p>
 
 
