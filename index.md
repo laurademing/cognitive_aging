@@ -35,16 +35,15 @@ Aging is a complex phenomenon. How should we approach it?
 <p> A heuristic for sample sizes is 300-5,000 individuals to detect a cognitive difference over 5 years with p<0.05 with .8 probability. You might expect your score to drop by a few points (on most of the major scales) every 5 years, after age 50.
 </p>
 
-    <figure>
-<div id="observablehq-beb78e3f"></div>
+<figure>
+<div id="observablehq-5cb18737"></div>
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
 import define from "https://api.observablehq.com/@laurademing/cognition-with-age.js?v=3";
-const inspect = Inspector.into("#observablehq-beb78e3f");
+const inspect = Inspector.into("#observablehq-5cb18737");
 (new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
 </script>
-    </figure>
-
+</figure>
     <h4>Hearing</h4>
 
     <p>As you age, structures inside the ear start to change and their functions decline. Your ability to pick up sounds decreases. You may also have problems maintaining your balance as you sit, stand, and walk.</p>
