@@ -25,6 +25,14 @@ svg.append("circle")
   .attr("cx", 300).attr("cy", 100).attr("r", 40).style("fill", "green");
 </script>
 
+<div id="observablehq-beb78e3f"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@laurademing/cognition-with-age.js?v=3";
+const inspect = Inspector.into("#observablehq-beb78e3f");
+(new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
+</script>
+
 <dt-article>
   <h1>Hello World 4</h1>
   <h2>A description of the article</h2>
